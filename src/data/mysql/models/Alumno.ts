@@ -10,7 +10,7 @@ class Alumno extends Model {
 
   @PrimaryKey
   @Column({
-    type: DataType.STRING(8),
+    type: DataType.STRING(11),
     allowNull: false,
     unique: true  // Matricula como clave primaria
   })
@@ -52,7 +52,7 @@ class Alumno extends Model {
   area?: Area;
 
   @Column({
-    type: DataType.STRING(10),
+    type: DataType.STRING(30),
     allowNull: true  // Codigo_Verificacion puede ser null
   })
   declare codigoVerificacion?: string;

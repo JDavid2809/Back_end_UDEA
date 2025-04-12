@@ -2,10 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    //Migracion para quitar campo de permisos_administrador
-    await queryInterface.removeColumn('administradores', 'permisos');
-
+  async up (queryInterface, Sequelize) {
     /**
      * Add altering commands here.
      *
@@ -14,12 +11,12 @@ module.exports = {
      */
   },
 
-  async down(queryInterface, Sequelize) {
+  async down (queryInterface, Sequelize) {
     /**
      * Add reverting commands here.
      *
      * Example:
      * await queryInterface.dropTable('users');
      */
-  },
+  }
 };

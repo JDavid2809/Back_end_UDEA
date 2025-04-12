@@ -11,8 +11,6 @@ const router = Router()
 
 router.post('/loginAlumno',
 
-    body('nombre')
-        .notEmpty().withMessage('El nombre del Usuario Obligatorio'),
     body('correo')
         .notEmpty().withMessage('El email es Obligatorio'),
     body('password')
